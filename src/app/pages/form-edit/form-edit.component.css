@@ -47,10 +47,6 @@ span {
   max-width: 350px;
   max-height: 700px;
 }
-.example-header-image {
-  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
-  background-size: cover;
-}
 
 .bloq1 {
   border-radius: 5px;
@@ -64,8 +60,8 @@ span {
   margin-right: 24px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  width: fit-content;
-  box-sizing: border-box;
+  width: 470px;
+  box-sizing:content-box;
 }
 #formBand input {
   width: 300px;
@@ -132,7 +128,7 @@ button:hover {
       text-align: center;
       line-height: 1.6;
     }
-  }
+}
 @media screen and (max-width: 600px) {
   img {
     display: none;

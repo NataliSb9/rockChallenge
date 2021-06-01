@@ -6,8 +6,8 @@
 
         <div class ="column" id="menu">
             <div class = "row">
-                <div  id="addBand">
-                    <a routerLink = "/formBand">Agregar banda</a>
+                <div  class = "rowCenter" id="addBand">
+                    <a id="addBandButton" routerLink = "/formBand"></a>
                 </div>
             
                 <div class ="rowCenter" id = "search">
@@ -32,7 +32,7 @@
                     <img mat-card-image class="imgCard"  src = "{{rockBands.foto}}" alt=""/>
                     <mat-card-content>
                         <p class="nameBand">{{rockBands.name}}</p>
-                        <div class="row" >
+                        <div class="row" id="buttonCards">
                             <div  class="links">
                                 <a (click)= "selectBand(rockBands)">Saber mas</a>
                             </div>
