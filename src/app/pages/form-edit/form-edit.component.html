@@ -1,0 +1,30 @@
+<div id="title" class="row">Edita la información de <span class="nameBand">{{band.name}}</span></div>
+<div class="row">
+    <div class="columnCenter bloq1">
+        <div  class="row" >
+            <img src="assets/bandas/original.jpg" alt="">
+            <form  id ="formBand"action ="" [formGroup]="formEditBand">
+                <label for="">Nombre de la banda</label>
+                <input type="text" [value]= "" formControlName ="nameBand"value ="manolo">
+                <label for="">Inicio de la banda</label>
+                <input type="text" formControlName ="yearBeginning">
+                <label for="">Url de la foto de la banda</label>
+                <input type="text" value = "manolo" name="manolo" formControlName ="foto" >
+                <label for="">Url de un videoclip de la banda</label>
+                <input type="text" formControlName ="video">
+                <textarea maxlength="800" name="" id="" cols="30" rows="10"  formControlName ="description" placeholder="Agrega la historia de la banda"></textarea> 
+                <button (click)= "editBand()" class="columnCenter" id="buttonBand">Añadir cambios</button>
+                <p id="userResponse">{{response}}</p>
+            </form>
+            
+        </div>
+    </div>
+    
+</div>
+
+
+
+   
+
+
+    

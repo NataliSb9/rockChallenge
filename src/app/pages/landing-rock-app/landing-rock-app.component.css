@@ -1,0 +1,144 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rowCenter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#main {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+#title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#line {
+  border-bottom: 1.5px solid rgba(187, 184, 184, 0.6);
+  padding-bottom: 10px;
+  width:auto;
+}
+
+#addBand {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(21, 22, 22);
+}
+#addBand a {
+  text-decoration: none;
+  color: black;
+  max-width: 200px;
+}
+
+#addBand a:hover {
+  text-decoration: none;
+  color: #a50d0d;
+}
+
+#search {
+  margin-bottom: 8px;
+}
+#searchInput input{
+  width: 235px;
+  height: 30px;
+}
+#loupe{
+  margin-left: 7px;
+}
+
+#loupe img{
+  width: 24px;
+  height: 24px;
+}
+
+::placeholder{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/**CARDS***/
+.rowCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: wrap;
+}
+
+.columnCards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cards {
+  max-width: 375px;
+  max-height: auto;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  border-color: #cac6c6;
+  border: solid, 1px;
+  border-style: solid;
+  border-width: 0.5px;
+}
+
+#listBand{
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.nameBand {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+text-transform: capitalize;}
+
+.links > a {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(24, 23, 23);
+  display: flex;
+  justify-content: space-around;
+  padding-right: 20px;
+}
+
+.links a:hover {
+  text-decoration: none;
+  color: #a50d0d;
+}
+/**IMG CARDS***/
+img {
+  height: 400px;
+}
+.testDiv {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#collectCards {
+  padding: 12px;
+  margin-top: 30px;
+}
+
+#collectCards > .cards {
+  margin: 12px;
+}
+/* .cards:hover {
+  box-shadow: 6px 6px 6px #a50d0d9f;
+} */

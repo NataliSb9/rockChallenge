@@ -1,0 +1,50 @@
+    <div class="column" id="main">
+        
+        <div class="row" id="title">
+            <p>Tus bandas de rock</p>
+        </div>
+
+        <div class ="column" id="menu">
+            <div class = "row">
+                <div  id="addBand">
+                    <a routerLink = "/formBand">Agregar banda</a>
+                </div>
+            
+                <div class ="rowCenter" id = "search">
+                    <div class = "column" id="searchInput">
+                        <input  type="text" placeholder="Busca tu banda" #nameBand>
+                    </div>
+                    <div  class = "column" id = "loupe">
+                        <button (click) = "findBand(nameBand.value)"><img src="assets/iconos/lupaRed24.png" alt=""></button>
+                    </div>
+                </div>
+    
+            </div>
+           
+            <div id="line" class="column"></div>
+
+        </div>
+        
+
+        <div id="listBand">
+            <div class="rowCards marginCards testDiv" id="collectCards">
+                <mat-card class="cards columnCards " *ngFor = "let rockBands of bands">
+                    <img mat-card-image class="imgCard"  src = "{{rockBands.foto}}" alt=""/>
+                    <mat-card-content>
+                        <p class="nameBand">{{rockBands.name}}</p>
+                        <div class="row" >
+                            <div  class="links">
+                                <a (click)= "selectBand(rockBands)">Saber mas</a>
+                            </div>
+                            <div class="links">
+                                <a (click) = "deleteBand(rockBands._id)">Eliminar banda</a>
+                            </div>
+                        </div>
+                    </mat-card-content>
+                    
+                </mat-card>
+            </div> 
+
+        </div>
+
+    </div>

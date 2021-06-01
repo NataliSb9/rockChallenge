@@ -1,0 +1,61 @@
+{
+    "bands": [
+        {
+            "nameBand": "AC/DC",
+            "yearBeginning": 1973,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iure aliquam at ipsa magnam vel. Esse voluptatum consectetur facere officia quo cumque distinctio molestiae, modi, reprehenderit praesentium, eos impedit! Doloribus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam cum autem optio aliquam ex, magnam, nisi dolore eligendi perspiciatis ducimus voluptatem unde atque quia pariatur ratione iure officiis aperiam fu",
+            "video": ["https://www.youtube.com/watch?v=l482T0yNkeo&ab_channel=AC%2FDCAC%2FDCCanaloficialdeartista"],
+            "photo": "https://images-na.ssl-images-amazon.com/images/I/91NuHgWC6cL._SL1500_.jpg"
+        },
+        {
+            "nameBand": "Deep Purple",
+            "yearBeginning": 1968,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iure aliquam at ipsa magnam vel. Esse voluptatum consectetur facere officia quo cumque distinctio molestiae, modi, reprehenderit praesentium, eos impedit! Doloribus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam cum autem optio aliquam ex, magnam, nisi dolore eligendi perspiciatis ducimus voluptatem unde atque quia pariatur ratione iure officiis aperiam fu",
+            "video": ["https://www.youtube.com/watch?v=l482T0yNkeo&ab_channel=AC%2FDCAC%2FDCCanaloficialdeartista"],
+            "photo": "https://i.pinimg.com/originals/26/b9/80/26b980414da44e64a9a1ed1eeba72c4d.png"
+        },
+        {
+            "nameBand":"The Ramones",
+            "yearBeginning": 1974,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iure aliquam at ipsa magnam vel. Esse voluptatum consectetur facere officia quo cumque distinctio molestiae, modi, reprehenderit praesentium, eos impedit! Doloribus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam cum autem optio aliquam ex, magnam, nisi dolore eligendi perspiciatis ducimus voluptatem unde atque quia pariatur ratione iure officiis aperiam fu",
+            "video": ["https://www.youtube.com/watch?v=bm51ihfi1p4&ab_channel=TheRamonesTheRamonesCanaloficialdeartista"],
+            "photo":"https://1.bp.blogspot.com/-U-GFC-jx49s/U3z-AWnZw_I/AAAAAAAAIuc/zHsqJxoJtgA/s1600/Ramones_escudo_logo.png"
+        },
+        {
+            "nameBand":"The Rolling Stones",
+            "yearBeginning": 1962,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iure aliquam at ipsa magnam vel. Esse voluptatum consectetur facere officia quo cumque distinctio molestiae, modi, reprehenderit praesentium, eos impedit! Doloribus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam cum autem optio aliquam ex, magnam, nisi dolore eligendi perspiciatis ducimus voluptatem unde atque quia pariatur ratione iure officiis aperiam fu",
+            "video": ["https://www.youtube.com/watch?v=RcZn2-bGXqQ&ab_channel=ABKCOVEVOABKCOVEVO"],
+            "photo":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/let-it-bleed-1558717858.jpg?crop=1xw:1xh;center,top&resize=980:*"
+        },
+        {
+            "nameBand":"Led Zeppelin",
+            "yearBeginning": 1968,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iure aliquam at ipsa magnam vel. Esse voluptatum consectetur facere officia quo cumque distinctio molestiae, modi, reprehenderit praesentium, eos impedit! Doloribus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam cum autem optio aliquam ex, magnam, nisi dolore eligendi perspiciatis ducimus voluptatem unde atque quia pariatur ratione iure officiis aperiam fu",
+            "video": ["https://www.youtube.com/watch?v=6tlSx0jkuLM&ab_channel=TheRollingStonesTheRollingStonesCanaloficialdeartista"],
+            "photo":"https://images-na.ssl-images-amazon.com/images/I/81FsrtGiXwL._SL1425_.jpg"
+        },
+        {
+            "nameBand":"Queen",
+            "yearBeginning": 1970,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iure aliquam at ipsa magnam vel. Esse voluptatum consectetur facere officia quo cumque distinctio molestiae, modi, reprehenderit praesentium, eos impedit! Doloribus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam cum autem optio aliquam ex, magnam, nisi dolore eligendi perspiciatis ducimus voluptatem unde atque quia pariatur ratione iure officiis aperiam fu",
+            "video": ["https://www.youtube.com/watch?v=Z3w5gVM_4y8&ab_channel=QueenHouse85QueenHouse85"],
+            "photo":"https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/image500/.f3noMS6U/SharedImage-53612.jpg?t=8ef45f0e3ac88b35ab1d"
+        },
+        {
+            "nameBand":"Pink Floyd",
+            "yearBeginning": 1965,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iure aliquam at ipsa magnam vel. Esse voluptatum consectetur facere officia quo cumque distinctio molestiae, modi, reprehenderit praesentium, eos impedit! Doloribus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam cum autem optio aliquam ex, magnam, nisi dolore eligendi perspiciatis ducimus voluptatem unde atque quia pariatur ratione iure officiis aperiam fu",
+            "video": ["https://www.youtube.com/watch?v=YR5ApYxkU-U&ab_channel=mongchilde"],
+            "photo":"https://i0.wp.com/hipersonica.com/wp-content/uploads/2019/07/81FBC78C-2A1B-4853-9200-059A309C4A4A.jpeg?w=1392&ssl=1"
+        },
+        {
+            "nameBand":"Kiss",
+            "yearBeginning": 1973,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iure aliquam at ipsa magnam vel. Esse voluptatum consectetur facere officia quo cumque distinctio molestiae, modi, reprehenderit praesentium, eos impedit! Doloribus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam cum autem optio aliquam ex, magnam, nisi dolore eligendi perspiciatis ducimus voluptatem unde atque quia pariatur ratione iure officiis aperiam fu",
+            "video": ["https://www.youtube.com/watch?v=ZhIsAZO5gl0&ab_channel=KissVEVO"],
+            "photo":"https://images-na.ssl-images-amazon.com/images/I/71ta0e6TEGL._AC_SL1416_.jpg"
+        }
+
+    ]
+}
