@@ -20,6 +20,7 @@
   margin-right: 50px;
   margin-left: 50px;
 }
+
 #title {
   font-family: "Archivo Black", sans-serif;
   font-size: 30px;
@@ -38,6 +39,7 @@
   font-size: 20px;
   font-weight: 500;
   color: rgb(21, 22, 22);
+  margin-bottom: 10px;
 }
 #addBand a {
   text-decoration: none;
@@ -67,6 +69,11 @@
 #loupe img{
   width: 24px;
   height: 24px;
+}
+#loupe button{
+  background: transparent;
+  border: 0 solid transparent;
+  cursor: pointer;
 }
 
 ::placeholder{
@@ -144,17 +151,32 @@ img {
   margin: 12px;
 }
 
+
+
+
 @media screen and (max-width: 600px){
- 
+  #addBandButton::after{
+    content: url(../../../assets/iconos/addMobile.png);
+  }
+ #loupe{
+   margin-left: 40px;
+ }
 }
 @media screen and (max-width: 470px) {
   #main {
     margin-right: 0px;
     margin-left: 0px;
   }
+
   img {
     height: 270px;
   }
+
+  #listBand{
+    margin-right: 27px;
+    margin-left: 27px;
+  }
+
   .cards {
     max-width: 370px;
     max-height: 300;
@@ -175,6 +197,11 @@ img {
     margin: 9px;
   }
 
+  #searchInput input{
+    width: 215px;
+    height: 30px;
+  }
+
   #addBandButton::after{
     content: url(../../../assets/iconos/addMobile.png);
   }
@@ -187,6 +214,22 @@ img {
     justify-content: space-around;
     padding-right: 7px;
     text-align: center;
+  }
+}
 
+@media screen and (max-width: 320px){
+  #title {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  #searchInput input{
+    width: 188px;
+    height: 30px;
+  }
+  img {
+    height: 210px;
   }
 }
