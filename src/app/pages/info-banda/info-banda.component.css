@@ -4,11 +4,13 @@
   justify-content: center;
   align-content: center;
 }
+
 .column {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .columnCenter {
   display: flex;
   flex-direction: column;
@@ -16,10 +18,6 @@
   align-items: center;
 }
 
-#main {
-  margin-right: 50px;
-  margin-left: 50px;
-}
 #title {
   font-family: "Archivo Black", sans-serif;
   font-size: 30px;
@@ -37,6 +35,7 @@ span {
   text-decoration: none;
   color: rgb(3, 3, 3);
 }
+
 .info {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
@@ -51,6 +50,7 @@ span {
 .nameBand {
   color: #a50d0d;
 }
+
 .bloq1 {
   margin-top: 30px;
   border-radius: 5px;
@@ -59,6 +59,7 @@ span {
   padding-right: 20px;
   box-shadow: 2px 2px 5px rgb(167, 128, 128);
   margin-bottom: 20px;
+  text-align: center;
 }
 img {
   max-width: 450px;
@@ -85,15 +86,35 @@ a:hover {
   color: #a50d0d;
 }
 
+/**INFO VIDEO**/
+
 @media screen and (max-width: 600px) {
-  img {
-    display: none;
+  #outSideBloq1{
+    margin-left: 120px;   
+  }
+  .row{
+    flex-direction: column;
   }
 
+  #title {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 300px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+ 
   .bloq1 {
     border-radius: 5px;
     border: none;
-    max-width: 200px;
+    max-width: 300px;
     box-shadow: none;
     margin-bottom: 20px;
   }
@@ -104,5 +125,45 @@ a:hover {
     margin-left: 10px;
     text-align: center;
     line-height: 1.6;
+  }
+
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #outSideBloq1{
+    margin-left: 53px;   
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #outSideBloq1{
+    margin-left: 30px;   
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #outSideBloq1{
+    margin-left: 28px;   
+  }
+  img {
+    max-width: 220px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
 }
