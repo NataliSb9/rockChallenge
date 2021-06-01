@@ -26,13 +26,13 @@
   margin-top: 80px;
   margin-bottom: 60px;
 }
-span{
+span {
   margin-left: 10px;
 }
-.nameBand{
+.nameBand {
   color: #a50d0d;
 }
-#userResponse{
+#userResponse {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -110,4 +110,92 @@ button {
 button:hover {
   color: #a50d0d;
   background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 770px) {
+  img {
+      display: none;
+    }
+  
+   .bloq1 {
+      border-radius: 5px;
+      border:none;
+      max-width: 200px;
+      box-shadow: none;
+      margin-bottom: 20px;
+    }
+  
+    #title{
+      font-size: 27px;
+      margin-right: 10px;
+      margin-left: 10px;
+      text-align: center;
+      line-height: 1.6;
+    }
+  }
+@media screen and (max-width: 600px) {
+  img {
+    display: none;
+  }
+
+  .bloq1 {
+    border-radius: 5px;
+    border: none;
+    max-width: 200px;
+    box-shadow: none;
+    margin-bottom: 20px;
+  }
+
+  #title {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  span{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #formBand input {
+    width: 220px;
+    height: 30px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+  }
+  
+  #formBand textarea {
+    margin-top: 20px;
+    width: 220px;
+  }
+
+  button {
+    margin-top: 25px;
+    height: 45px;
+    width: 220px;
+    border-radius: 3px;
+    border: none;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: rgb(224, 222, 222);
+    background-color: #a50d0d;
+    cursor: pointer;
+  }
+
+  span{
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

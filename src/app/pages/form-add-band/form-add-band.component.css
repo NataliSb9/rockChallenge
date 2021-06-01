@@ -20,6 +20,7 @@
   margin-right: 50px;
   margin-left: 50px;
 }
+
 #title {
   font-family: "Archivo Black", sans-serif;
   font-size: 30px;
@@ -27,7 +28,7 @@
   margin-bottom: 60px;
 }
 
-#userResponse{
+#userResponse {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -47,35 +48,36 @@
   background-size: cover;
 }
 
-.bloq1{
+.bloq1 {
   border-radius: 5px;
-  border: solid 1px #a50d0d4b ;
-  max-width:830px;
+  border: solid 1px #a50d0d4b;
+  max-width: 830px;
   padding-right: 20px;
   box-shadow: 2px 2px 5px rgb(167, 128, 128);
   margin-bottom: 20px;
 }
-.bloq1 img{
+
+.bloq1 img {
   margin-right: 24px;
   border-top-left-radius: 5px;
-  border-bottom-left-radius:5px ;
+  border-bottom-left-radius: 5px;
   width: fit-content;
-  box-sizing:border-box;
-
+  box-sizing: border-box;
 }
-#formBand input{
+#formBand input {
   width: 300px;
   height: 30px;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
 
-#formBand textarea{
+#formBand textarea {
   margin-top: 20px;
   width: 300px;
 }
-#formBand label{
+
+#formBand label {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -85,25 +87,112 @@
   justify-content: left;
 }
 
-label{
+label {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-button{
+button {
   margin-top: 25px;
   height: 45px;
   width: 300px;
   border-radius: 3px;
   border: none;
   font-size: 20px;
-  font-family:'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: rgb(224, 222, 222);
   background-color: #a50d0d;
   cursor: pointer;
 }
-button:hover{
+button:hover {
   color: #a50d0d;
   background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 770px) {
+  img {
+      display: none;
+    }
+  
+   .bloq1 {
+      border-radius: 5px;
+      border:none;
+      max-width: 200px;
+      box-shadow: none;
+      margin-bottom: 20px;
+    }
+  
+    #title{
+      font-size: 27px;
+      margin-right: 10px;
+      margin-left: 10px;
+      text-align: center;
+      line-height: 1.6;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+img {
+    display: none;
+  }
+
+ .bloq1 {
+    border-radius: 5px;
+    border:none;
+    max-width: 200px;
+    box-shadow: none;
+    margin-bottom: 20px;
+  }
+
+  #title{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #formBand input {
+    width: 220px;
+    height: 30px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+  }
+  
+  #formBand textarea {
+    margin-top: 20px;
+    width: 220px;
+  }
+
+  button {
+    margin-top: 25px;
+    height: 45px;
+    width: 220px;
+    border-radius: 3px;
+    border: none;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: rgb(224, 222, 222);
+    background-color: #a50d0d;
+    cursor: pointer;
+  }
+
+  span{
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
