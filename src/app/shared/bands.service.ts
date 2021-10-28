@@ -22,8 +22,8 @@ export class BandsService {
     return this.http.get(`${this.urlBand}?name=${name}`)
   }
 
-  addBand(band:any){
-    
+  addBand(band:RockBand){
+    console.log(band)
     return this.http.post(this.urlBand, band)
   }
 

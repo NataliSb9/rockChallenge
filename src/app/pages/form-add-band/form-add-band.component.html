@@ -13,7 +13,7 @@
                 <label for="">Url de un videoclip de la banda</label>
                 <input type="text" value = "man/" formControlName ="video">
                 <textarea name="" maxlength="800" id="" cols="30" rows="10"  formControlName ="description" placeholder="Agrega la historia de la banda"></textarea> 
-                <button (click) = "createBand()"  class="columnCenter" id="buttonBand">Añadir banda</button>
+                <button (click) = "sendBandToService()"  class="columnCenter" id="buttonBand">Añadir banda</button>
 
                 <p id="userResponse">{{response}}</p>
     

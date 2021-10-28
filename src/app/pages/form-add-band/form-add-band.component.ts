@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {BandsService} from 'src/app/shared/bands.service'
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { BandsService } from 'src/app/shared/bands.service'
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { RockBand } from 'src/app/models/rock-band';
 
 
@@ -11,36 +11,55 @@ import { RockBand } from 'src/app/models/rock-band';
   styleUrls: ['./form-add-band.component.css']
 })
 export class FormAddBandComponent implements OnInit {
-   public formAddBand: FormGroup
-   public response: string; 
-  constructor(private buildFormBand: FormBuilder, private infoBands: BandsService ) {
+  public formAddBand: FormGroup
+  public response: string;
+  constructor(private buildFormBand: FormBuilder, private infoBands: BandsService) {
+
     this.formAddBand = this.buildFormBand.group({
-      nameBand:"",
-      yearBeginning: 0,
-      foto: "",
-      video: "",
-      description: "",
+      nameBand: ["", Validators.required],
+      yearBeginning: [0, Validators.required],
+      foto: [""],
+      video: [""],
+      description: [""],
     })
-    this.response=""
+    this.response = ""
   }
 
-  createBand(){
-    let dataForm = this.formAddBand.value;
-    let nameBand = dataForm.nameBand;
-    let yearBeginning = dataForm.yearBeginning;
-    let foto = dataForm.foto;
-    let video = dataForm.video;
-    let description = dataForm.description;
-
-    let newBand =  new RockBand(0,nameBand.toLowerCase(),yearBeginning,description,video,foto);
-    console.log(newBand)
-    this.infoBands.addBand(newBand).subscribe((res:any)=>{
-      console.log(res)
-      if(res._id !== 0){
-        this.response = "Tu banda ha sido añadida"
+  sendBandToService() {
+    if( this.createBandIfFilled().nameBand !== "" && 
+      this.createBandIfFilled().yearBeginning !== 0 &&
+      this.createBandIfFilled().foto !== "" && 
+      this.createBandIfFilled().video !== "" &&
+      this.createBandIfFilled().description!== ""){
+        this.infoBands.addBand(this.createBandIfFilled()).subscribe((res: any) => {
+          console.log(res)
+        })
+      } else {
+        this.response = "Completa todo el formulario";
       }
-    })
+   
   }
+
+  createBandIfFilled(): any {
+    let dataForm = this.formAddBand.value;
+    let nameBand: string = dataForm.nameBand;
+    let yearBeginning: number = dataForm.yearBeginning
+    let foto: string = dataForm.foto;
+    let video: string = dataForm.video;
+    let description: string = dataForm.description;
+
+    if (dataForm.nameBand !== "" &&
+      dataForm.yearBeginning !== 0 &&
+      dataForm.foto !== "" &&
+      dataForm.video !== "" &&
+      dataForm.description !== "") {
+      let newBand = new RockBand(0, nameBand.toLowerCase(), yearBeginning, description, video, foto);
+      return newBand
+    } 
+
+  }
+
+
 
   ngOnInit(): void {
   }

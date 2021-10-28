@@ -86,6 +86,10 @@ a:hover {
   color: #a50d0d;
 }
 
+p {
+  font-size: 20px;
+}
+
 /**INFO VIDEO**/
 
 @media screen and (max-width: 600px) {
